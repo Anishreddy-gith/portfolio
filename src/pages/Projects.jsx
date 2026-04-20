@@ -32,7 +32,6 @@ const projects = [
 function Projects() {
   return (
     <section className="projects-wrap">
-      <p className="section-tag">Projects Page</p>
       <h2>Selected Projects</h2>
       <p className="intro-line">
         A selection of applied AI, cybersecurity, and software engineering work. Each project card

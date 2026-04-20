@@ -8,7 +8,6 @@ function Home() {
           className="profile-pic"
         />
         <div>
-          <p className="section-tag">About Me</p>
           <h2>Boppidi Anish Reddy</h2>
           <p>
             Computer Science student focused on AI/ML, cybersecurity, and research-driven software
@@ -20,25 +19,11 @@ function Home() {
             <a href="https://www.linkedin.com/in/anish-reddy-boppidi-55b04827b" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com/Anishreddy-gith" target="_blank" rel="noreferrer">GitHub</a>
           </div>
-          <div className="hero-highlights">
-            <div>
-              <p className="metric">6+</p>
-              <p className="metric-label">AI and Security Projects</p>
-            </div>
-            <div>
-              <p className="metric">2026</p>
-              <p className="metric-label">B.Tech Graduation</p>
-            </div>
-            <div>
-              <p className="metric">IEEE</p>
-              <p className="metric-label">Student Branch Chair</p>
-            </div>
-          </div>
         </div>
       </article>
 
       <article className="info-card">
-        <p className="section-tag">Research Interests</p>
+        <h3>Research Interests</h3>
         <ul>
           <li>Multi-Agent AI Systems and RAG Pipelines for research automation</li>
           <li>Cybersecurity analytics, vulnerability discovery, and threat intelligence</li>
@@ -48,7 +33,7 @@ function Home() {
       </article>
 
       <article className="info-card">
-        <p className="section-tag">Personal Details</p>
+        <h3>Personal Details</h3>
         <div className="details-grid">
           <p><strong>Name</strong><span>Boppidi Anish Reddy</span></p>
           <p><strong>Phone</strong><span>+91-9392148106</span></p>
@@ -59,7 +44,7 @@ function Home() {
       </article>
 
       <article className="info-card">
-        <p className="section-tag">Skills</p>
+        <h3>Skills</h3>
         <div className="chips">
           {[
             "Python",
