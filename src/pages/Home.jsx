@@ -20,6 +20,20 @@ function Home() {
             <a href="https://www.linkedin.com/in/anish-reddy-boppidi-55b04827b" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com/Anishreddy-gith" target="_blank" rel="noreferrer">GitHub</a>
           </div>
+          <div className="hero-highlights">
+            <div>
+              <p className="metric">6+</p>
+              <p className="metric-label">AI and Security Projects</p>
+            </div>
+            <div>
+              <p className="metric">2026</p>
+              <p className="metric-label">B.Tech Graduation</p>
+            </div>
+            <div>
+              <p className="metric">IEEE</p>
+              <p className="metric-label">Student Branch Chair</p>
+            </div>
+          </div>
         </div>
       </article>
 
@@ -35,13 +49,13 @@ function Home() {
 
       <article className="info-card">
         <p className="section-tag">Personal Details</p>
-        <ul>
-          <li><strong>Name:</strong> Boppidi Anish Reddy</li>
-          <li><strong>Phone:</strong> +91-9392148106</li>
-          <li><strong>Personal Email:</strong> anishreddyboppidi@gmail.com</li>
-          <li><strong>College Email:</strong> anishreddy@mahindrauniversity.edu.in</li>
-          <li><strong>Location:</strong> Hyderabad, India</li>
-        </ul>
+        <div className="details-grid">
+          <p><strong>Name</strong><span>Boppidi Anish Reddy</span></p>
+          <p><strong>Phone</strong><span>+91-9392148106</span></p>
+          <p><strong>Personal Email</strong><span>anishreddyboppidi@gmail.com</span></p>
+          <p><strong>College Email</strong><span>anishreddy@mahindrauniversity.edu.in</span></p>
+          <p><strong>Location</strong><span>Hyderabad, India</span></p>
+        </div>
       </article>
 
       <article className="info-card">

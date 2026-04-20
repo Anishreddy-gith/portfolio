@@ -4,8 +4,8 @@ function Navbar() {
   return (
     <header className="top-nav">
       <div className="brand-block">
-        <p className="brand-kicker">Assignment 4</p>
-        <h1>Anish Reddy Portfolio</h1>
+        <p className="brand-kicker">Portfolio</p>
+        <h1>Boppidi Anish Reddy</h1>
       </div>
       <nav>
         <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "")}>Home</NavLink>
