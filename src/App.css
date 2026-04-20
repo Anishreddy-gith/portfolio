@@ -18,6 +18,7 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -31,6 +32,16 @@ body {
   background: white;
   border: 1px solid #e0e0e0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  animation: pageLoad 480ms ease-out;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .top-nav {
@@ -77,10 +88,27 @@ body {
   border: none;
   font-weight: 600;
   font-size: 0.95rem;
-  transition: color 180ms ease;
+  transition: color 200ms ease;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.08rem;
+  position: relative;
+}
+
+.top-nav nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--text);
+  transition: width 300ms ease;
+}
+
+.top-nav nav a:hover::after,
+.top-nav nav a:focus-visible::after {
+  width: 100%;
 }
 
 .top-nav nav a:hover,
@@ -91,8 +119,11 @@ body {
 
 .top-nav nav a.active-link {
   color: #1a1a1a;
-  border-bottom: 2px solid #1a1a1a;
-  padding-bottom: 0.3rem;
+}
+
+.top-nav nav a.active-link::after {
+  width: 100%;
+  background: #1a1a1a;
 }
 
 .content {
@@ -102,6 +133,18 @@ body {
 
 .home-grid {
   display: block;
+  animation: sectionFade 500ms ease-out;
+}
+
+@keyframes sectionFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-card {
@@ -110,6 +153,7 @@ body {
   gap: 1.5rem;
   padding: 2rem 0;
   border-bottom: 1px solid var(--divider);
+  animation: inhale 600ms ease-out;
 }
 
 .profile-pic {
@@ -118,6 +162,12 @@ body {
   border-radius: 3px;
   border: 1px solid var(--divider);
   object-fit: cover;
+  transition: box-shadow 300ms ease, transform 300ms ease;
+}
+
+.profile-pic:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .section-tag {
@@ -168,11 +218,32 @@ body {
   padding: 0;
   border: none;
   background: none;
+  position: relative;
+  transition: color 220ms ease;
+}
+
+.contact-links a::after,
+.project-card a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: #0066cc;
+  transition: width 300ms ease;
 }
 
 .contact-links a:hover,
-.project-card a:hover {
-  text-decoration: underline;
+.contact-links a:hover::after,
+.project-card a:hover,
+.project-card a:hover::after {
+  background: #0052a3;
+}
+
+.contact-links a:hover::after,
+.project-card a:hover::after {
+  width: 100%;
 }
 
 .hero-highlights {
@@ -194,6 +265,41 @@ body {
 .info-card {
   padding: 1.8rem 0;
   border-bottom: 1px solid var(--divider);
+  animation: sectionReveal 500ms ease-out;
+}
+
+.info-card:nth-of-type(2) {
+  animation-delay: 100ms;
+}
+
+.info-card:nth-of-type(3) {
+  animation-delay: 200ms;
+}
+
+.info-card:nth-of-type(4) {
+  animation-delay: 300ms;
+}
+
+@keyframes sectionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes inhale {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .info-card:last-child {
@@ -242,6 +348,13 @@ body {
   gap: 1rem;
   padding: 0.5rem 0;
   border-bottom: none;
+  transition: background 200ms ease, padding 200ms ease;
+}
+
+.details-grid p:hover {
+  background: rgba(26, 26, 26, 0.02);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .details-grid p:last-child {
@@ -274,6 +387,15 @@ body {
   padding: 0.3rem 0.6rem;
   font-size: 0.85rem;
   font-weight: 500;
+  transition: all 250ms ease;
+  cursor: default;
+}
+
+.chips span:hover {
+  background: var(--text);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 26, 26, 0.15);
 }
 
 .projects-wrap {
@@ -282,6 +404,7 @@ body {
   border-radius: 0;
   padding: 1.8rem 0;
   box-shadow: none;
+  animation: sectionFade 500ms ease-out;
 }
 
 .intro-line {
@@ -300,6 +423,39 @@ body {
 .project-card {
   padding: 1.2rem 0;
   border-bottom: 1px solid var(--divider);
+  animation: cardReveal 500ms ease-out;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.project-card:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.project-card:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.project-card:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.project-card:hover {
+  transform: translateX(4px);
+}
+
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .project-card:last-child {
