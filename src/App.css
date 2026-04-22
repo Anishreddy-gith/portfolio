@@ -131,6 +131,36 @@ body {
   gap: 1rem;
 }
 
+.mini-nav-card {
+  position: sticky;
+  top: 6rem;
+  z-index: 15;
+  padding: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.mini-nav-card button {
+  border: 1px solid #c8d8fb;
+  background: #f2f6ff;
+  color: #325394;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 0.34rem 0.7rem;
+  cursor: pointer;
+  transition: all 170ms ease;
+}
+
+.mini-nav-card button:hover {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--primary), #4d79ec);
+}
+
 .hero-panel {
   padding: 1.6rem;
 }
@@ -290,6 +320,10 @@ body {
   grid-column: span 6;
 }
 
+.timeline-card {
+  grid-column: span 12;
+}
+
 .leadership-card,
 .certifications-card {
   grid-column: span 6;
@@ -343,6 +377,44 @@ body {
   font-weight: 700;
 }
 
+.timeline-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 0.8rem;
+  align-items: start;
+  padding: 0.75rem;
+  border: 1px solid #dce6fa;
+  border-radius: 14px;
+  background: #f9fbff;
+}
+
+.timeline-year {
+  margin: 0;
+  font-size: 0.79rem;
+  color: #4f68a1;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.timeline-title {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #243c67;
+  font-weight: 800;
+}
+
+.timeline-desc {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -388,6 +460,37 @@ body {
   color: var(--muted);
   line-height: 1.72;
   max-width: 74ch;
+}
+
+.project-filters {
+  margin-top: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  border: 1px solid #cadafb;
+  background: #f1f6ff;
+  color: #345595;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+  transition: all 160ms ease;
+}
+
+.filter-btn:hover {
+  border-color: #adc5f5;
+  background: #e6eeff;
+}
+
+.filter-btn.active {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--primary), #4f7df0);
+  box-shadow: 0 10px 18px rgba(47, 93, 208, 0.28);
 }
 
 .projects-grid {
@@ -509,5 +612,13 @@ body {
   .projects-header,
   .info-card {
     padding: 1rem;
+  }
+
+  .mini-nav-card {
+    top: 5.6rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
   }
 }
