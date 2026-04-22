@@ -377,6 +377,23 @@ body {
   font-weight: 700;
 }
 
+.leadership-role {
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #e7ecfa;
+}
+
+.leadership-role:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.leadership-role ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
 .timeline-list {
   display: grid;
   gap: 0.7rem;

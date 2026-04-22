@@ -127,10 +127,23 @@
 
         <article className="card info-card leadership-card">
           <h3>Leadership</h3>
-          <ul>
-            <li><strong>Chair, IEEE Student Branch + IEEE CS Chapter</strong> - Leading 200+ members and technical initiatives.</li>
-            <li><strong>President, Qubit MU</strong> - Conducting workshops and collaborations in quantum computing.</li>
-          </ul>
+          <div className="leadership-role">
+            <p className="role-title">Chair, IEEE Student Branch + IEEE CS Chapter | Mahindra University</p>
+            <p className="role-meta">Nov 2025 – Present</p>
+            <ul>
+              <li>Lead a 200+ member organization at Mahindra University; drive technical initiatives, organize large-scale events, and coordinate with faculty, industry professionals, and global IEEE networks.</li>
+              <li>Facilitate connections between students and professionals worldwide, enabling exposure to real-world industry practices and supporting their transition into the professional ecosystem.</li>
+            </ul>
+          </div>
+          <div className="leadership-role">
+            <p className="role-title">President, Qubit MU – Quantum Computing Club | Mahindra University</p>
+            <p className="role-meta">Jul 2025 – Present</p>
+            <ul>
+              <li>Scaled a specialized quantum computing and AI club; leading workshops, member onboarding, and technical sessions on core quantum concepts.</li>
+              <li>Built and nurtured collaborations with industry partners in quantum computing; facilitating student engagement through live projects, knowledge exchange, and mentorship opportunities.</li>
+              <li>Act as a bridge between academia and industry by connecting students with professionals for hands-on experience, internships, and collaborative research initiatives in quantum and AI security domains.</li>
+            </ul>
+          </div>
         </article>
 
         <article className="card info-card certifications-card">
