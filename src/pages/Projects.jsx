@@ -1,4 +1,4 @@
-const projects = [
+﻿const projects = [
   {
     title: "Supply Chain AI Risk Monitor",
     stack: "Python, Algorand, AI Anomaly Detection",
@@ -31,18 +31,21 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="projects-wrap">
-      <h2>Selected Projects</h2>
-      <p className="intro-line">
-        A selection of applied AI, cybersecurity, and software engineering work. Each project card
-        links directly to its GitHub repository.
-      </p>
+    <section className="projects-page">
+      <div className="projects-header">
+        <p className="eyebrow">Projects</p>
+        <h2>Featured Work</h2>
+        <p>
+          A curated set of projects across AI research, cybersecurity, and full-stack development.
+          Every project is linked to its source repository on GitHub.
+        </p>
+      </div>
 
       <div className="projects-grid">
         {projects.map((project) => (
-          <article key={project.title} className="project-card">
+          <article key={project.title} className="card project-card">
+            <p className="project-stack">{project.stack}</p>
             <h3>{project.title}</h3>
-            <p className="stack">{project.stack}</p>
             <p>{project.summary}</p>
             <a href={project.repo} target="_blank" rel="noreferrer">
               View Repository
