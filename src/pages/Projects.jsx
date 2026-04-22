@@ -1,31 +1,45 @@
 ﻿const projects = [
   {
-    title: "Supply Chain AI Risk Monitor",
-    stack: "Python, Algorand, AI Anomaly Detection",
+    title: "Multi-Agent RAG-Based AI Research Scientist",
+    stack: "Python, LLM, LangChain, FAISS",
     summary:
-      "Detects supply-chain anomalies and records verifiable risk events for transparent monitoring.",
-    repo: "https://github.com/Anishreddy-gith/supplychain-ai-risk-monitor",
+      "Designed a 7-agent LLM research workflow to automate literature synthesis and structured report generation.",
+    repo: "https://github.com/Anishreddy-gith",
   },
   {
-    title: "AI Malware Reverse Engineering Framework",
+    title: "AI-Powered Insider Threat Detection",
+    stack: "PyTorch Geometric, Kafka, FastAPI",
+    summary:
+      "Built behavioral anomaly detection workflows using graph-based learning and sequence models for enterprise security.",
+    repo: "https://github.com/Anishreddy-gith",
+  },
+  {
+    title: "AI Zero-Day Vulnerability Discovery Engine",
+    stack: "CodeBERT, AFL++, angr, Python",
+    summary:
+      "Implemented a multi-stage security pipeline integrating static analysis, fuzzing, and symbolic execution.",
+    repo: "https://github.com/Anishreddy-gith",
+  },
+  {
+    title: "Autonomous Malware Reverse Engineering Framework",
     stack: "Python, GNN, Sandbox Analysis",
     summary:
-      "Autonomous malware behavior analysis with structured threat intelligence reporting.",
+      "Created an AI-assisted malware analysis system that generates explainable threat intelligence outputs.",
     repo: "https://github.com/Anishreddy-gith/ai-malware-re-framework",
+  },
+  {
+    title: "ChainGuard - Blockchain AI Supply Chain Risk Monitor",
+    stack: "React, FastAPI, Algorand",
+    summary:
+      "Developed a full-stack supply-chain risk platform with blockchain-backed audit and anomaly signals.",
+    repo: "https://github.com/Anishreddy-gith/supplychain-ai-risk-monitor",
   },
   {
     title: "NanoDrugOnto",
     stack: "Python, LLM, Ontology Engineering",
     summary:
-      "Research project on nanoparticle-drug interaction modeling using an LLM-powered ontology.",
+      "Ongoing research on LLM-based ontology construction for nanoparticle-drug interaction prediction.",
     repo: "https://github.com/Anishreddy-gith/nanodrugonto",
-  },
-  {
-    title: "Web Tech Expense Tracker",
-    stack: "HTML, CSS, JavaScript",
-    summary:
-      "A web application for managing day-to-day expenses with an intuitive UI.",
-    repo: "https://github.com/Anishreddy-gith/web-tech-expense-tracker",
   },
 ];
 
@@ -36,8 +50,8 @@ function Projects() {
         <p className="eyebrow">Projects</p>
         <h2>Featured Work</h2>
         <p>
-          A curated set of projects across AI research, cybersecurity, and full-stack development.
-          Every project is linked to its source repository on GitHub.
+          A CV-aligned project portfolio across AI research, cybersecurity engineering, and
+          full-stack systems. Each card links to GitHub.
         </p>
       </div>
 
