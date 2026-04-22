@@ -12,8 +12,8 @@
             <p className="eyebrow">AI, Cybersecurity, and Research</p>
             <h2>Boppidi Anish Reddy</h2>
             <p>
-              Computer Science Engineer focused on building practical AI systems, cybersecurity
-              intelligence workflows, and research-driven software products.
+              Computer Science Engineer focused on shipping AI systems, cybersecurity intelligence
+              pipelines, and research-driven products with measurable impact.
             </p>
             <p className="availability-pill">Open to Internships and Full-Time Opportunities</p>
             <div className="contact-links">
@@ -21,6 +21,7 @@
               <a href="mailto:anishreddy@mahindrauniversity.edu.in">College Email</a>
               <a href="https://www.linkedin.com/in/anish-reddy-boppidi-55b04827b" target="_blank" rel="noreferrer">LinkedIn</a>
               <a href="https://github.com/Anishreddy-gith" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="/Boppidi_Anish_Reddy_CV.pdf" target="_blank" rel="noreferrer" className="resume-btn">Download Resume</a>
             </div>
           </div>
         </div>
