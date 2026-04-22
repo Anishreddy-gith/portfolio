@@ -4,7 +4,7 @@
       <article className="card hero-panel">
         <div className="hero-top">
           <img
-            src="https://github.com/Anishreddy-gith.png"
+            src="/boppidi-anish-reddy.png"
             alt="Boppidi Anish Reddy"
             className="profile-pic"
           />
