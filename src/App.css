@@ -330,6 +330,7 @@ body {
 }
 
 .skills-card,
+.contact-card,
 .availability-card {
   grid-column: span 12;
 }
@@ -362,6 +363,43 @@ body {
 .details-grid span {
   color: #2e4268;
   font-weight: 700;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-grid p {
+  margin: 0;
+  display: grid;
+  gap: 0.14rem;
+  border-bottom: 1px solid #e7ecfa;
+  padding-bottom: 0.5rem;
+}
+
+.contact-grid p:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-grid strong {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: #6d82ab;
+}
+
+.contact-grid span,
+.contact-grid a {
+  color: #2e4268;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-grid a:hover {
+  color: #224992;
+  text-decoration: underline;
 }
 
 .role-title {

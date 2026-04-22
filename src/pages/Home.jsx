@@ -26,8 +26,6 @@
             </p>
             <p className="availability-pill">Open to Internships and Full-Time Opportunities</p>
             <div className="contact-links">
-              <a href="mailto:anishreddyboppidi@gmail.com">Personal Email</a>
-              <a href="mailto:anishreddy@mahindrauniversity.edu.in">College Email</a>
               <a href="https://www.linkedin.com/in/anish-reddy-boppidi-55b04827b" target="_blank" rel="noreferrer">LinkedIn</a>
               <a href="https://github.com/Anishreddy-gith" target="_blank" rel="noreferrer">GitHub</a>
               <a href={`${assetBase}Boppidi_Anish_Reddy_CV.pdf`} target="_blank" rel="noreferrer" className="resume-btn">Download Resume</a>
@@ -55,6 +53,7 @@
         <button type="button" onClick={() => jumpTo("research")}>Research</button>
         <button type="button" onClick={() => jumpTo("timeline")}>Timeline</button>
         <button type="button" onClick={() => jumpTo("skills")}>Skills</button>
+        <button type="button" onClick={() => jumpTo("contact")}>Contact</button>
         <button type="button" onClick={() => jumpTo("availability")}>Availability</button>
       </article>
 
@@ -181,6 +180,21 @@
             ].map((skill) => (
               <span key={skill}>{skill}</span>
             ))}
+          </div>
+        </article>
+
+        <article className="card info-card contact-card" id="contact">
+          <h3>Contact</h3>
+          <div className="contact-grid">
+            <p><strong>Phone</strong><span>+91-9392148106</span></p>
+            <p>
+              <strong>LinkedIn</strong>
+              <span><a href="https://www.linkedin.com/in/anish-reddy-boppidi-55b04827b" target="_blank" rel="noreferrer">linkedin.com/in/anish-reddy-boppidi-55b04827b</a></span>
+            </p>
+            <p>
+              <strong>GitHub</strong>
+              <span><a href="https://github.com/Anishreddy-gith" target="_blank" rel="noreferrer">github.com/Anishreddy-gith</a></span>
+            </p>
           </div>
         </article>
 
