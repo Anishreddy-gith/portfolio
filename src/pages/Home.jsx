@@ -35,7 +35,7 @@
 
         <div className="hero-metrics">
           <div>
-            <p>6.25</p>
+            <p>7.00</p>
             <span>B.Tech CGPA</span>
           </div>
           <div>
